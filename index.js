@@ -6,5 +6,5 @@ app.use(async (ctx) => {
 });
 
 app.listen(2022, () => {
-  console.log("2022项目启动");
+  console.log("2022项目启动!!!");
 });

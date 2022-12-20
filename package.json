@@ -6,7 +6,7 @@
   "author": "李武朝 <liwc@udiannet.com>",
   "license": "MIT",
   "scripts": {
-    "build": "node index.js",
+    "build": "node index.js"
   },
   "dependencies": {
     "koa": "^2.14.1"

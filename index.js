@@ -1,10 +1,10 @@
-const Koa = require('koa');
+const Koa = require("koa");
 const app = new Koa();
 
-app.use(async ctx => {
-    ctx.body = 'Hello Vercel';
+app.use(async (ctx) => {
+  ctx.body = "Hello Vercel";
 });
 
-app.listen(80, () => {
-    console.log('80项目启动')
+app.listen(2022, () => {
+  console.log("2022项目启动");
 });

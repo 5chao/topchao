@@ -5,6 +5,6 @@ app.use(async (ctx) => {
   ctx.body = "Hello Vercel !!!!";
 });
 
-app.listen(2022, () => {
-  console.log("2022项目启动!!!");
+app.listen(3008, () => {
+  console.log("3008项目启动!!!");
 });

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:5chao/topchao.git",
-  "author": "李武朝 <liwc@udiannet.com>",
+  "author": "empty.wu",
   "license": "MIT",
   "scripts": {
     "build": "node index.js"

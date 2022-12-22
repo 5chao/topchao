@@ -6,7 +6,12 @@ const router = new Router();
 router.post(
   "/telephone",
   async (ctx) => {
-    let data = await parserTelePhone("0779-2296236");
+    console.log(ctx.query.phone);
+
+    let data;
+    if (ctx.query.phone) {
+      data = await parserTelePhone(ctx.query.phone);
+    }
 
     ctx.body = {
       status: "success",

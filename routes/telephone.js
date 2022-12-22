@@ -1,13 +1,17 @@
 const Router = require("koa-router");
-//const parser911 = require("../utils/cell_phone_parser_911");
+const parserTelePhone = require("../utils/tel_phone_parser");
 const router = new Router();
 
+// 固定电话查询
 router.post(
-  "/cellphone",
+  "/telephone",
   async (ctx) => {
+    let data = await parserTelePhone("0779-2296236");
+
     ctx.body = {
       status: "success",
-      message: "Hello cellphone11",
+      message: "Hello telephone",
+      data: data,
     };
   },
   router.allowedMethods()

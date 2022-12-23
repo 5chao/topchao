@@ -6,11 +6,11 @@ const router = new Router();
 router.post(
   "/telephone",
   async (ctx) => {
-    console.log(ctx.query.phone);
+    let _phone = ctx.request.body.phone || ctx.query.phone;
 
     let data;
-    if (ctx.query.phone) {
-      data = await parserTelePhone(ctx.query.phone);
+    if (_phone) {
+      data = await parserTelePhone(_phone);
     }
 
     ctx.body = {
